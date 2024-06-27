@@ -1,12 +1,23 @@
 "use client";
-
+import { useEffect } from "react";
 import Image from "next/image";
 import { Container } from "@/components/Container";
-import heroImg from "../../public/img/hero.png";
+import heroImg from "../../public/img/food.svg";
 import { TypeAnimation } from 'react-type-animation';
+import WebFont from 'webfontloader';
 import "./font.css"
 
 export const Hero = () => {
+
+  useEffect(() => {
+    WebFont.load({
+      custom: {
+        families: ['monch', 'fago'],
+        urls: ['./font.css']
+      },
+    });
+  }, []);
+
   return (
     <>
       <Container className="flex flex-wrap ">
@@ -41,7 +52,7 @@ export const Hero = () => {
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
-                href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
+                href="/"
                 target="_blank"
                 rel="noopener"
                 style={{fontFamily:"monch"}}
@@ -73,12 +84,12 @@ export const Hero = () => {
           <div className="">
             <Image
               src={heroImg}
-              width="616"
-              height="617"
+              width="500"
+              height="557"
               className={"object-cover"}
               alt="Hero Illustration"
               loading="eager"
-              placeholder="blur"
+              
             />
           </div>
         </div>
