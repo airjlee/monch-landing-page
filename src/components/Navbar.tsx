@@ -3,14 +3,16 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
+import "./font.css"
 
 export const Navbar = () => {
   const navigation = [
-    "Product",
-    "Features",
-    "Pricing",
-    "Company",
-    "Blog",
+    // "Product",
+    // "Features",
+    // "Pricing",
+    // "Company",
+    // "Blog",
+    ""
   ];
 
   return (
@@ -24,15 +26,15 @@ export const Navbar = () => {
                 <Link href="/">
                   <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <span>
-                      <Image
+                      {/* <Image
                         src="/img/logo.svg"
                         alt="N"
                         width="32"
                         height="32"
                         className="w-8"
-                      />
+                      /> */}
                     </span>
-                    <span>Nextly</span>
+                    <span style={{fontFamily: "monch"}}>monch<span className="text-monch">.</span></span>
                   </span>
                 </Link>
 
@@ -90,11 +92,14 @@ export const Navbar = () => {
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link href="/" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
-              Get Started
-          </Link>
+          <div style={{fontFamily: "fago"}}>
+            <Link href="/" className="px-6 py-2 text-white">
+                Blog
+            </Link>
+          </div>
+          
 
-          <ThemeChanger />
+          {/* <ThemeChanger /> */}
         </div>
       </nav>
     </div>

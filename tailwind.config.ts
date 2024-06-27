@@ -3,6 +3,7 @@ import type { Config } from "tailwindcss";
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
+
 const config: Config = {
   mode: "jit",
   content: [
@@ -15,11 +16,13 @@ const config: Config = {
     extend: {
       colors: {
         trueGray: colors.neutral,
+        monch: '#38c463'
       },
     },
     fontFamily: {
       sans: ["Inter", ...defaultTheme.fontFamily.sans],
       stock: [defaultTheme.fontFamily.sans],
+      monch : ['Monch']
     },
   },
   variants: {

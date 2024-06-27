@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'monch';
+    src: local('monch'), url('./fagoprobold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+  @font-face {
+    font-family: 'fago';
+    src: local('fago'), url('./fagopro.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
