@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { Container } from "./Container";
-import heroImg from "../../public/img/food.svg";
+import heroImg from "../../public/img/phone.svg";
 import { TypeAnimation } from 'react-type-animation';
 // import WebFont from 'webfontloader';
 import { fago, monch } from "./fonts";
@@ -76,7 +76,7 @@ export const Hero = () => {
           <div className="">
             <Image
               src={heroImg}
-              width="500"
+              width="400"
               height="557"
               className={"object-cover"}
               alt="Hero Illustration"
