@@ -1,21 +1,21 @@
 "use client";
 import { useEffect } from "react";
 import Image from "next/image";
-import { Container } from "@/components/Container";
+import { Container } from "./Container";
 import heroImg from "../../public/img/food.svg";
 import { TypeAnimation } from 'react-type-animation';
-import WebFont from 'webfontloader';
+// import WebFont from 'webfontloader';
 import "./font.css"
 
 export const Hero = () => {
 
   useEffect(() => {
-    WebFont.load({
-      custom: {
-        families: ['monch', 'fago'],
-        urls: ['./font.css']
-      },
-    });
+    // WebFont.load({
+    //   custom: {
+    //     families: ['monch', 'fago'],
+    //     urls: ['./font.css']
+    //   },
+    // });
   }, []);
 
   return (
