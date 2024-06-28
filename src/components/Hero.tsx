@@ -47,7 +47,7 @@ export const Hero = () => {
                 href="/"
                 target="_blank"
                 rel="noopener"
-                className="px-8 py-4 text-med text-center text-black bg-white rounded-md ">
+                className="px-8 py-4 text-med text-center text-grey-100 dark:text-black bg-black dark:bg-white rounded-md ">
                 Join the waitlist
               </a>
               </div>
@@ -72,7 +72,7 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-center w-full lg:w-1/2">
+        <div className="flex items-center justify-center w-full lg:w-1/2 ">
           <div className="">
             <Image
               src={heroImg}
