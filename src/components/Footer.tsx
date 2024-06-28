@@ -74,7 +74,7 @@ export function Footer() {
             <div style={fago.style}>Follow us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
-                href="https://twitter.com/web3templates"
+                href="/"
                 target="_blank"
                 rel="noopener"
               >
@@ -82,14 +82,14 @@ export function Footer() {
                 <Twitter />
               </a>
               <a
-                href="https://instagram.com/web3templates"
+                href="/"
                 target="_blank"
                 rel="noopener"
               >
                 <span className="sr-only">Instagram</span>
                 <Instagram />
               </a>
-              <a href="https://linkedin.com/" target="_blank" rel="noopener">
+              <a href="https://www.linkedin.com/company/101705742/admin/dashboard/" target="_blank" rel="noopener">
                 <span className="sr-only">Linkedin</span>
                 <Linkedin />
               </a>
