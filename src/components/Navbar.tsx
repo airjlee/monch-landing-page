@@ -3,7 +3,7 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
-import "./font.css"
+import { monch, fago } from "./fonts";
 
 export const Navbar = () => {
   const navigation = [
@@ -34,7 +34,7 @@ export const Navbar = () => {
                         className="w-8"
                       /> */}
                     </span>
-                    <span style={{fontFamily: "monch"}}>monch<span className="text-monch">.</span></span>
+                    <span className={monch.className}>monch<span className="text-monch">.</span></span>
                   </span>
                 </Link>
 
@@ -92,9 +92,9 @@ export const Navbar = () => {
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <div style={{fontFamily: "fago"}}>
+          <div className={fago.className}>
             <Link href="/" className="px-6 py-2 text-white">
-                Blog
+                blog
             </Link>
           </div>
           

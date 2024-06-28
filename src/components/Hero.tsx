@@ -1,29 +1,20 @@
 "use client";
-import { useEffect } from "react";
 import Image from "next/image";
 import { Container } from "./Container";
 import heroImg from "../../public/img/food.svg";
 import { TypeAnimation } from 'react-type-animation';
 // import WebFont from 'webfontloader';
-import "./font.css"
+import { fago, monch } from "./fonts";
 
 export const Hero = () => {
 
-  useEffect(() => {
-    // WebFont.load({
-    //   custom: {
-    //     families: ['monch', 'fago'],
-    //     urls: ['./font.css']
-    //   },
-    // });
-  }, []);
 
   return (
     <>
       <Container className="flex flex-wrap ">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
-            <div style={{fontFamily: "monch"}}>
+            <div className={monch.className}>
             <h1 className="text-4xl leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
             Recommendations {" "}
             <br />
@@ -50,15 +41,16 @@ export const Hero = () => {
              
             </p>
 
-            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0  sm:items-center sm:flex-row">
+            <div className={`${fago.className} mt-5`}>
               <a
                 href="/"
                 target="_blank"
                 rel="noopener"
-                style={{fontFamily:"monch"}}
-                className="px-10 py-5 text-med text-center text-black bg-white rounded-md ">
+                className="px-8 py-4 text-med text-center text-black bg-white rounded-md ">
                 Join the waitlist
               </a>
+              </div>
               {/* <a
                 href="https://github.com/web3templates/nextly-template/"
                 target="_blank"

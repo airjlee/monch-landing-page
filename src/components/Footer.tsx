@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import { Container } from "./Container";
+import { fago, monch } from "./fonts";
 
 export function Footer() {
   const navigation = ["Careers", "Blog"];
@@ -20,13 +21,15 @@ export function Footer() {
                 href="/"
                 className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
               >
-              
-              <span style={{fontFamily: "monch"}}>monch<span className="text-monch">.</span></span>
+
+                <span className={monch.className}>monch<span className="text-monch">.</span></span>
               </Link>
             </div>
 
-            <div style={{fontFamily: "fago"}} className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
-              A new generation of restaurant discovery.
+            <div className={fago.className}>
+              <div className="max-w-md mt-4 text-gray-500 dark:text-gray-400">
+                A new generation of restaurant discovery.
+              </div>
             </div>
 
             <div className="mt-5">
@@ -36,13 +39,13 @@ export function Footer() {
                 rel="noopener"
                 className="relative block w-44"
               >
-                
+
               </a>
             </div>
           </div>
 
-          <div>
-            <div style={{fontFamily:"fago"}} className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+          <div className={fago.className}>
+            <div  className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {navigation.map((item, index) => (
                 <Link
                   key={index}
@@ -55,7 +58,7 @@ export function Footer() {
             </div>
           </div>
           <div>
-            <div style={{fontFamily:"fago"}} className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+            <div style={fago.style} className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {legal.map((item, index) => (
                 <Link
                   key={index}
@@ -68,7 +71,7 @@ export function Footer() {
             </div>
           </div>
           <div className="">
-            <div style={{fontFamily:"fago"}}>Follow us</div>
+            <div style={fago.style}>Follow us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
                 href="https://twitter.com/web3templates"
@@ -94,8 +97,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div style={{fontFamily: "fago"}} className="my-10 text-sm text-left text-gray-600 dark:text-gray-400">
-        © 2024 <span style={{fontFamily: "monch"}}>monch</span>
+        <div style={fago.style} className="my-10 text-sm text-left text-gray-600 dark:text-gray-400">
+          © 2024 <span style={monch.style}>monch</span>
         </div>
       </Container>
       {/* Do not remove this */}
